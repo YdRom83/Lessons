@@ -7,59 +7,69 @@
 # к отдельным полям через методы класса
 
 
-# class Car:
-#     def __init__(self):
-#         self.model = ''
-#         self.year = ''
-#         self.brand = ''
-#         self.value = ''
-#         self.color = ''
-#         self.price = ''
-#
-#     def get_model(self):
-#         self.model = input('Enter a brand: ')
-#
-#     def get_year(self):
-#         self.year = input('Enter year: ')
-#
-#     def get_brand(self):
-#         self.year = input('Enter brand: ')
-#
-#     def get_value(self):
-#         self.year = input('Enter value: ')
-#
-#     def get_color(self):
-#         self.color = input('Enter color: ')
-#
-#     def get_price(self):
-#         self.price = int(input('Enter price: '))
-#
-#     def show_model(self):
-#         print(self.model)
-#
-#     def show_year(self):
-#         print(self.year)
-#
-#     def show_brand(self):
-#         print(self.brand)
-#
-#     def show_value(self):
-#         print(self.value)
-#
-#     def show_color(self):
-#         print(self.color)
-#
-#     def show_price(self):
-#         print(self.price)
-#
-#
-# c = Car()
-# c.get_model()
-# c.get_year()
-# c.get_color()
-# c.show_model()
-# c.show_year()
-# c.show_color()
+class Car:
+    count = 0
+
+    def __init__(self):
+        self.model = ''
+        self.year = ''
+        self.brand = ''
+        self.value = ''
+        self.color = ''
+        self.price = ''
+
+    def get_model(self):
+        self.model = input('Enter a brand: ')
+
+    def get_year(self):
+        self.year = input('Enter year: ')
+
+    def get_brand(self):
+        self.year = input('Enter brand: ')
+
+    def get_value(self):
+        self.year = input('Enter value: ')
+
+    def get_color(self):
+        self.color = input('Enter color: ')
+
+    def get_price(self):
+        self.price = int(input('Enter price: '))
+
+    def show_model(self):
+        Car.count += 1
+        print(self.model)
+
+    def show_year(self):
+        Car.count += 1
+        print(self.year)
+
+    def show_brand(self):
+        Car.count += 1
+        print(self.brand)
+
+    def show_value(self):
+        Car.count += 1
+
+        print(self.value)
+
+    def show_color(self):
+        Car.count += 1
+        print(self.color)
+
+    def show_price(self):
+        Car.count += 1
+        print(self.price)
+
+
+c = Car()
+c.get_model()
+c.get_year()
+c.get_color()
+c.show_model()
+c.show_year()
+c.show_color()
+print(c.count)
 
 # ----------------------------------------------------------------------------#
 
@@ -207,15 +217,15 @@
 # print(a.name)
 
 # ----------------------------------------------------------------------------#
-class Calculator:
-    @staticmethod
-    def add(a, b):
-        return a + b
-
-    @staticmethod
-    def multiply(a, b):
-        return a * b
-
-
-print(Calculator.add(5, 4))
-print(Calculator.multiply(5, 4))
+# class Calculator:
+#     @staticmethod
+#     def add(a, b):
+#         return a + b
+#
+#     @staticmethod
+#     def multiply(a, b):
+#         return a * b
+#
+#
+# print(Calculator.add(5, 4))
+# print(Calculator.multiply(5, 4))
