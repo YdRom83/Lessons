@@ -175,17 +175,47 @@
 # res = calc.add_numbers(3, 5)
 # print(res)
 # ----------------------------------------------------------------------------#
-class Vehicle:
-    def __init__(self, brand):
-        self._brand = brand
-
-
-class Car(Vehicle):
-    def __init__(self, brand, model):
-        super().__init__(brand)
-        self.model = model
-
-
-car = Car('Toyota', 'Corolla')
-print(car._brand)
+# class Vehicle:
+#     def __init__(self, brand):
+#         self._brand = brand
+#
+#
+# class Car(Vehicle):
+#     def __init__(self, brand, model):
+#         super().__init__(brand)
+#         self.model = model
+#
+#
+# car = Car('Toyota', 'Corolla')
+# print(car._brand)
 # ----------------------------------------------------------------------------#
+# class MyClass:
+#     def __init__(self, name) -> None:
+#         self._name = name
+#
+#     @property
+#     def name(self):
+#         return self._name
+#
+#     @name.setter
+#     def name(self, value):
+#         self._name = value
+#
+#
+# a = MyClass('Ivan')
+# a.name = 'sergey'
+# print(a.name)
+
+# ----------------------------------------------------------------------------#
+class Calculator:
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+    @staticmethod
+    def multiply(a, b):
+        return a * b
+
+
+print(Calculator.add(5, 4))
+print(Calculator.multiply(5, 4))
