@@ -171,9 +171,9 @@ class MyNewClass(ClassA, ClassB):
     def __init__(self):
         super().__init__()
         print("MyNewClass constructor called")
-
+      
 
 obj = MyNewClass()
-# obj.method_a()
+
 # obj.method_b()
 print(obj.additional_property)
