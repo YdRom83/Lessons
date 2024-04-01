@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # print('строка 1')
 # print('строка 2')
 # print('строка 3')
@@ -140,7 +140,7 @@ print('str2')
 func1()
 print('str3')
 print('str4')
-=======
+
 # print('строка 1')
 # print('строка 2')
 # print('строка 3')
@@ -282,4 +282,4 @@ print('str2')
 func1()
 print('str3')
 print('str4')
->>>>>>> deaa2a33b0bc573cf77fb39ddee8945b6466c618
+
